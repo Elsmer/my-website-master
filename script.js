@@ -1,3 +1,45 @@
+
+
+
+let menu = document.querySelector('.menu');
+let dropDown = document.querySelector('.drop-down');
+
+const setupEventListeners = function () {
+    menu.addEventListener('click', displayMenu);
+
+    if (document.querySelector('.go_back')) {
+        document.querySelector('.go_back').addEventListener('click', goBack);
+    }
+
+};
+
+const displayMenu = function () {
+    if (menu.classList.contains('fa-bars')) {
+        //menu is closed
+        menu.classList.remove('fa-bars');
+        menu.classList.add('fa-times');
+        dropDown.classList.remove('hidden');
+    } else if (menu.classList.contains('fa-times')) {
+        // menu is open
+        menu.classList.remove('fa-times');
+        menu.classList.add('fa-bars');
+        dropDown.classList.add('hidden');
+    }
+};
+
+const goBack = function () {
+    window.history.back();
+};
+
+
+setupEventListeners();
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function (event) {
     // array with texts to type in typewriter
     var dataText = ["Hi, <br /> <br />  I'm Elsa, a comunicator and traveler that's passionate about art in all it's forms. <br /> I consider myself as an all arounder with interests and skills in digital media,communications, web development and UX."];
