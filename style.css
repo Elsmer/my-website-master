@@ -25,7 +25,9 @@ font-size: 30px;
 color: palevioletred;
 display: inline-block;
 margin-left: 50px;
+max-width: 20rem;
 }
+
 
 
 .main-nav {
@@ -34,19 +36,30 @@ margin-left: 50px;
     color: black;
     align-items: center;
     display: inline-block;
-    text-align: right;
-    width: calc(100% - 300px);
+     width: 100vw;
+     
+  /* background-color: rgb(242, 220, 192); */
+   
 }
 
 .main-nav__item {
-    display: inline-block;
-    
+    margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-left: 35rem;
+  max-width: 40rem;
+  position: relative;
+ 
+
 }
 
 .main-nav__items {
       display: inline-block;
       padding: 0px 15px;
       list-style: none; 
+      list-style-type: none;
+      margin: 2vw 0;
+      font-size: 3vh;
 }
 
  .main-nav__item a{ 
@@ -69,6 +82,22 @@ display: inline-block;
 }
 
 
+
+
+
+
+
+body{
+  margin: 0;
+}
+
+button{
+  display: none;
+}
+
+a:hover{
+  background-color:  rgb(205, 169, 124);
+}
 
 #background-img1 {
 margin: 0 auto;
@@ -258,106 +287,33 @@ width: 30px;
 height: 30px;
 }
 
+button{
+  display: none;
+}
 
-
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-
-    .wrapper {
-        width: 380px;
-    }
-
-  body {
-    max-width: 375px;
-    margin: 0 auto;
+@media only screen and (max-width: 500px) {
+  .main-nav__item {
+    flex-direction: column;
   }
-
-  header {
-      max-width: 375px;
-      height: 50px;
-      margin: 0 auto;
+  
+  a{
+    display: block;
   }
-
-  .main-nav {
-      display: none;
+  
+  .main-nav__items {
+    margin: 0;
   }
-
-  .logo {
-      font-size: 15px;
-      margin: 0 auto;
-      margin-top: 15px;
-  }
-
-  .imgcontainer {
-      display: none;
-  }
-
-  #about {
- display: inline-block; 
- position: relative;
-  height: auto;
-  margin: 0px auto;
-text-align: center;
-  }
-
-  .about-container {
-      display: inline-block;
-     
+  
+  button{
+    display: block;
     
-        
-  }
-
-  .about1 {
-    width: 10rem;
-    margin-top: 3rem;
-    margin-left: 4rem;
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: burlywood;
+    border: none;
+    outline: none;
+    cursor: pointer;
     
-}
-
-.about2 {
-text-align: center;
-width: 18rem;
-height: 15rem;
-
-}
-
-#aboutimg {
-  text-align: center;
-  margin-left: 10px;
-}
-
-
-
-.text-column {
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(2, 2, 2);
-   line-height: 1.5;
-   /* margin: 2rem; */
-   font-size: 10px;
-   height: 150px;
-   
-   
-}
-
-  
-
-  
-
-span {
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
-}
-
-
-@keyframes caret {
-  50% {
-    border-color: transparent;
+    align-self: flex-start;
   }
-}
-  
 }
