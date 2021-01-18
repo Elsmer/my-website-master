@@ -6,7 +6,9 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="style2.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Shade&family=Montserrat:wght@100;700&display=swap"
         rel="stylesheet">
@@ -20,6 +22,24 @@
 
         <header>
             <div class="logo"> Elsa Bynke </div>
+
+            <nav class="navigation">
+                <i class="fas fa-bars menu"></i>
+                <ul class="hidden drop-down" style="color: black">
+                    <a href="#about">
+                        <li>About</li>
+                    </a>
+                    <a href="#projects">
+                        <li>Projects</li>
+                    </a>
+                    <a href="select_habit.html">
+                        <li>Contact</li>
+                    </a>
+            
+                </ul>
+            </nav>
+
+        
             <nav class="main-nav">
                 <ul class="main-nav__item">
                     <li class="main-nav__items">
@@ -29,8 +49,11 @@
                         <a href="portfolio.html"> Portfolio </a>
                     </li>
                     <li class="main-nav__items">
-                        <a href="portfolio.html"> Projects</a>
+                        <a href="projects.html"> Projects</a>
                     </li>
+                    <!-- <li class="main-nav__items">
+                        <a href="portfolio.html"> Portfolio</a>
+                    </li> -->
                     <li class="main-nav__items">
                         <a href="portfolio.html"> Contact </a>
                     </li>
@@ -49,19 +72,7 @@
                 <div class="background-img2"><img src="./IMG/nusap-min.png" alt="Background" /> </div>
             </div>
 
-            <!-- <section id="about">
-            
-                <div id="about__column1">
-                    <div id="about__img"> <img src="./IMG/aboutimg-min.png" alt="Background" /></div>
-                    
-                </div>
-                <div id="about__column2">
-                    
-                        <p class="text-column"> Hi, <br /> <br /> <br /> I'm Elsa, a comunicator and traveler that's passionate about art in all it's forms. <br/> I consider myself as an "all arounder" with interests and skills in digital media, communications, web development and UX. 
-                        </p>
-                </div>
-                   
-                    </section> -->
+           
 
 
                     <section id="about">
@@ -70,7 +81,8 @@
                             <div class="about-item about2"><p class="text-column"> Hi, <br /> <br /> <br /> I'm Elsa, a comunicator and traveler that's passionate about art in all
                                 it's forms. <br /> I consider myself as an "all arounder" with interests and skills in digital media,
                                 communications, web development and UX.
-                            </p></div>
+                            </p><button class=" aboutbutton" type="button">Get in touch!</button></div>
+                            
                         </div>
 
                     </section>
@@ -83,22 +95,22 @@
 
                         <div class="projectsgrid_container">
                         <div class="projects__container">
-                            <div class="projects-item projects1"><img class="project-img" src="./IMG/habits.png" alt="project1">  </div>
-                            <div class="projects-item projects2"> <img class="project-img" src="IMG/projectsimg1.jpg"> </div>
-                            <div class="projects-item projects3"> <img class="project-img" src="IMG/projectsimg2.jpg"> </div>
+                           <a href="https://team-6-habit-tracker.github.io/habitTracker/"> <div class="projects-item projects1"><img class="project-img" src="./IMG/habits.png" alt="project1">  </div> </a>
+                            <div class="projects-item projects2"> <img class="project-img" src="IMG/projectsimg1komp.jpg"> </div>
+                            <div class="projects-item projects3"> <img class="project-img" src="IMG/projects10.jpg"> </div>
                             <div class="projects-item projects4"> <img class="project-img" src="./IMG/projectsimg4.jpg" alt="project1"></div>
-                            <div class="projects-item projects5"> <img class="project-img" src="./IMG/projectsimg6.jpg" alt="project1"></div>
-                            <div class="projects-item projects6"> <img class="project-img" src="./IMG/projectsimg1.jpg" alt="project1"></div>
-                            <div class="projects-item projects7"><img class="project-img" src="./IMG/projectsimg6.jpg" alt="project1">
+                            <div class="projects-item projects5"> <img class="project-img" src="./IMG/projects12komp.jpg" alt="project1"></div>
+                            <div class="projects-item projects6"> <img class="project-img" src="./IMG/projects7.jpg" alt="project1"></div>
+                            <div class="projects-item projects7"><img class="project-img" src="./IMG/projects8komp.jpg" alt="project1">
                             </div>
-                            <div class="projects-item projects8"> <img class="project-img" src="IMG/projectsimg1.jpg"> </div>
+                            <div class="projects-item projects8"> <img class="project-img" src="IMG/projects9komp.jpg"> </div>
                             </div>
                     
                         </div>
 
                     <section id="portfolio">
 
-                        <p class="text-column"> Portfolio
+                        <!-- <p class="text-column2"> Portfolio
                         </p>
 
                         <div class="portfolio__container">
@@ -106,11 +118,11 @@
                             <div class="item item-2"> Untz </div>
                              <div class="item item-3"> Untz </div>
                              <div class="item item-4"> Untz</div>
-                             <div class="item item-5"> untz</div>
-                            <div class="item item-6"> untz</div>
+                              <div class="item item-5"> untz</div>
+                            <div class="item item-6"> untz</div> 
 
 
-                        </div>
+                        </div> -->
                     
                         
                     
@@ -135,6 +147,7 @@
     </div>
 
     <script src="script.js"></script>
+   
 </body>
 
 </html>

@@ -25,7 +25,9 @@ font-size: 30px;
 color: palevioletred;
 display: inline-block;
 margin-left: 50px;
+max-width: 20rem;
 }
+
 
 
 .main-nav {
@@ -34,19 +36,30 @@ margin-left: 50px;
     color: black;
     align-items: center;
     display: inline-block;
-    text-align: right;
-    width: calc(100% - 300px);
+     width: 100vw;
+     
+  /* background-color: rgb(242, 220, 192); */
+   
 }
 
 .main-nav__item {
-    display: inline-block;
-    
+    margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-left: 35rem;
+  max-width: 40rem;
+  position: relative;
+ 
+
 }
 
 .main-nav__items {
       display: inline-block;
       padding: 0px 15px;
       list-style: none; 
+      list-style-type: none;
+      margin: 2vw 0;
+      font-size: 3vh;
 }
 
  .main-nav__item a{ 
@@ -69,6 +82,22 @@ display: inline-block;
 }
 
 
+
+
+
+
+
+body{
+  margin: 0;
+}
+
+button{
+  display: none;
+}
+
+a:hover{
+  background-color:  rgb(205, 169, 124);
+}
 
 #background-img1 {
 margin: 0 auto;
@@ -196,13 +225,9 @@ grid-template-rows: repeat(2, 20rem);
  
 }
 
-.projects-item {
-   border: solid 1px beige;
-}
 
-.projects-item:hover {
 
-}
+
 
 
 
@@ -222,40 +247,6 @@ margin-top: 10rem;
    
 }
 
-.project-img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.item-1{
-/* grid-column: 3 / span 2;
-  grid-row: third-line / 4; */
-}
-
-.item-2{
-   
-}
-
-.item-3 {
-
-}
-
-.item {
-    background-color:rgb(219, 128, 143);
-}
-
-
-
-
-
-#portfolio__column2 p::first-line {
-    color: palevioletred; 
-    font-size: 30px;
-    font-family: 'Bungee Shade', cursive;
-    
-}
 
 
 footer {
@@ -296,112 +287,33 @@ width: 30px;
 height: 30px;
 }
 
-
-
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-
-    .wrapper {
-        width: 380px;
-    }
-
-  body {
-    max-width: 375px;
-    margin: 0 auto;
-  }
-
-  header {
-      max-width: 375px;
-      height: 50px;
-      margin: 0 auto;
-  }
-
-  .main-nav {
-      display: none;
-  }
-
-  .logo {
-      font-size: 15px;
-      margin: 0 auto;
-      margin-top: 15px;
-  }
-
-  .imgcontainer {
-      display: none;
-  }
-
-  #about {
- display: inline-block; 
- position: relative;
-  height: auto;
-  margin: 0px auto;
-text-align: center;
-  }
-
-  .about-container {
-      display: inline-block;
-     
-    
-        
-  }
-
-  .about1 {
-    width: 10rem;
-    margin-top: 3rem;
-    margin-left: 4rem;
-    
+button{
+  display: none;
 }
 
-.about2 {
-
-width: 18rem;
-height: 15rem;
-
-}
-
-#aboutimg {
-  text-align: center;
-  margin-left: 10px;
-}
-
-
-
-.text-column {
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(2, 2, 2);
-   line-height: 1.5;
-   margin: 2rem;
-   font-size: 10px;
-   width: 250px;
-   height: 150px;
-   
-}
-
-  .projectsgrid_container {
-     grid-template-columns: repeat(1, 400px); 
+@media only screen and (max-width: 500px) {
+  .main-nav__item {
+    flex-direction: column;
   }
-
-span {
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
-}
-
-#portfolio__column2 p::first-line {
-    color: palevioletred; 
-    font-size: 15px;
-    font-family: 'Bungee Shade', cursive;
-    
-}
-
-@keyframes caret {
-  50% {
-    border-color: transparent;
-  }
-}
   
+  a{
+    display: block;
+  }
+  
+  .main-nav__items {
+    margin: 0;
+  }
+  
+  button{
+    display: block;
+    
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: burlywood;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    align-self: flex-start;
+  }
 }
